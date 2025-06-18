@@ -91,6 +91,7 @@ fun RecipeItem(recipe: RecipeModel, onItemClick : () -> Unit) {
                 contentDescription = null,
                 modifier = Modifier.size(200.dp)
             )
+            Text("***")
         }
     }
 }
