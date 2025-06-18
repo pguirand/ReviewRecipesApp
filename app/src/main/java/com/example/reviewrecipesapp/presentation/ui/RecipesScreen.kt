@@ -77,6 +77,7 @@ fun RecipeItem(recipe: RecipeModel, onItemClick : () -> Unit) {
                 .padding(4.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text("Rating : ${(3..5).random()}/5 ⭐")
             Text(recipe.name)
             Text(recipe.cuisine)
             Text(recipe.difficulty)
