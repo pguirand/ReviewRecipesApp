@@ -20,16 +20,6 @@ class RecipesViewModel @Inject constructor(
 
     private val _uiState = MutableStateFlow(RecipesUiState())
     val uiState = _uiState.asStateFlow()
-//    private val _singleRecipe = MutableStateFlow<UiState<RecipeModel>>(UiState.Loading)
-//    val singleRecipe = _singleRecipe.asStateFlow()
-//
-//    val recipes = repository.getAllRecipes()
-//        .stateIn(
-//            started = SharingStarted.WhileSubscribed(5000),
-//            scope = viewModelScope,
-//            initialValue = UiState.Loading
-//        )
-
 
     private fun getAllRecipes() {
         viewModelScope.launch {
